@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap Basics, Utilities, Forms, and Components Knowledge Check</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--using container and not container-fluid so that we keep some centering and max container width-->
+
+  
+        <div class="container-fluid"><img class="img-fluid w-100"
+            src="https://www.shutterstock.com/image-photo/book-open-pages-close-up-600nw-2562942291.jpg" alt="book"/>
+        </div>
+    
+        <div class="container-fluid text-center"><img class="img-fluid rounded-circle"
+            src="https://d.newsweek.com/en/full/2265611/young-adult-woman-library.jpg?w=1600&h=1600&q=88&f=077873a5de6b06625700e564685fcfde" alt="books"/>
+        </div>
+
+        <!-- Always visible button -->
+<button type="button" class="btn btn-primary">
+  Always Visible
+</button>
+
+<!-- Hidden on small screens, visible from md and up -->
+<button type="button" class="btn btn-secondary d-none d-md-block">
+  Hidden on Small
+</button>
+        
+
+    <div class="container mt-5">
+      <h2 class="text-center text-primary">Registration Form</h2>
+      <form class="border p-4 shadow-sm bg-light">
+
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                  <label for="first" class="form-label">First name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="first"
+                    placeholder="Enter your first name"
+                  />
+            </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                  <label for="last" class="form-label">Last name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="last"
+                    placeholder="Enter your last name"
+                  />
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <!--invalid-feedback is display:none until javascript applies the .is-invalid class to relevant input-->
+        <div class="invalid-feedback">Email is required.</div>
+    
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <!--invalid-feedback is display:none until javascript applies the .is-invalid class to relevant input-->
+        <div class="invalid-feedback">Password is required.</div>
+
+
+        <div class="mb-3">
+            
+          <input
+            type="checkbox"
+            name="agreement"
+            class="form-check-input"
+            id="agreement"
+            value="true"
+          />
+          <label for="agreement" class="form-label"></label>
+             Agree to Terms of Service</label
+          >
+        </div>
+
+        <button class="btn btn-success w-100" type="submit">Register</button>
+      </form>
+    </div>
+
+<!--wrapped in a table-responsive for horizontal scroll div and styled using both striped and hover -->
+    <div class="table-responsive">
+        <table class="table table-hover table-striped">
+            <!--begin table header-->
+            <thead class="table-success">
+              <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Agreement</th>
+              </tr>
+            </thead>
+            <!--begin table body-->
+            <tbody>
+              <tr>
+                <td>Avery</td>
+                <td>Cole</td>
+                <td>averycole1223@example.com</td>
+                <td>Agreed</td>
+              </tr>
+              <tr>
+                <td>Quinn</td>
+                <td>Parker</td>
+                <td>Quinparker345@anotherexample.com</td>
+                <td>Agreed</td>
+              </tr>2
+              <tr>
+                <td>Reese</td>
+                <td>Taylor</td>
+                <td>shortemail@em.co</td>
+                <td>Disagree</td>
+              </tr>
+              <tr>
+                <td>Rowan</td>
+                <td>James</td>
+                <td>rF9s@dn27.eu</td>
+                <td>Agreed</td>
+              </tr>
+              <tr>
+                <td>Sydney</td>
+                <td>Clark</td>
+                <td>sydney.name@email.org</td>
+                <td>Agreed</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
